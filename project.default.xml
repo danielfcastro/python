@@ -1,0 +1,17 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="Git.Settings">
+        <option name="PUSH_AUTO_UPDATE" value="true" />
+        <option name="ROOT_SYNC" value="DONT_SYNC" />
+      </component>
+      <component name="PropertiesComponent">
+        <property name="last_opened_file_path" value="C:/Python/Python36-64/python.exe" />
+        <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
+      </component>
+      <component name="VcsContentAnnotationSettings">
+        <option name="myLimit" value="2678400000" />
+      </component>
+    </defaultProject>
+  </component>
+</application>
