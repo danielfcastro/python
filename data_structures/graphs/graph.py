@@ -32,9 +32,9 @@ class Graph:
     def breadth_first_search(self, v):
 
         # list of visited nodes
-        visitados = [False] * self._vertexes
+        visited = [False] * self._vertexes
         # mark 'v' as a visited node
-        visitados[v - 1] = True
+        visited[v - 1] = True
         # adds 'v' into queue
         queue = [v - 1]
 
@@ -51,13 +51,13 @@ class Graph:
                 # vchecks if there is edge
                 if self._graph[v][u] == 1:
                     # checks if 'u' was not visited
-                    if visitados[u] == False:
+                    if visited[u] == False:
                         # mark 'u' as visited
-                        visitados[u] = True
+                        visited[u] = True
                         # adds 'u' into queue
                         queue.append(u)
                         # prints
-                        print('%d visitado' % (u + 1))
+                        print('%d visited' % (u + 1))
 
             # remove 'v' from queue
             queue.pop(0)
