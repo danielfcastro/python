@@ -37,6 +37,7 @@ class BinarySearchTree:
         if self.__root is not None:
             return False
         return True
+
     def clear(self):
         self.__root = None
 
@@ -77,7 +78,9 @@ class BinarySearchTree:
 
         # Base Case
         if root is None:
-            raise RuntimeError('Empty tree')
+            raise RuntimeError('Node not found')
+        if self.getRoot() is None:
+            raise RuntimeError('Empty Tree')
 
         # If the value to be deleted is smaller the root's value
         # then it lies in left subtree
@@ -126,6 +129,14 @@ class BinarySearchTree:
             current = current.getLeft()
 
         return current
+
+    def search(self, value, node):
+        if node.getValue() == value:
+            return True
+        if(value < node.getLeft().getValue()):
+            self.search(value, node.getLeft())
+        else:
+            self.search(value, node.getRight())
 
     # pre-order show (root-left-right)
     def show_pre_order(self, curr_node):
